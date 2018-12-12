@@ -1,11 +1,12 @@
 .story {
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 4rem;
   box-shadow: 1rem 3rem 6rem rgba(15, 15, 15, .15);
   background-color: $color-white;
   // background-color: darkblue;
   padding: 3rem;
-  padding-left: 9rem;
+  padding-left: 6rem;
   font-size: $default-font-size;
   transform: skewx(-12deg);
   border-style: outset;
