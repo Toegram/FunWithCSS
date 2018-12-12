@@ -85,13 +85,13 @@
   &:hover{
     background-image: linear-gradient(to right, $color-primary-light, $color-primary);
     color: $color-white;
-    box-shadow: -1rem 1.5rem 2rem rgba(0, 0, 0, .3); //x, y, blur, color
-    transform: translateY(-.2rem) translateX(.1rem);
+    box-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .3); //x, y, blur, color
+    transform: translateY(.2rem) translateX(.1rem) scale(1.01);
     font-weight: 700;
   }
 
   &:active{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3); //x, y, blur, color
-    transform: translateY(-.1rem)
+    transform: translateY(.1rem) scale(.99);
   }
 }
