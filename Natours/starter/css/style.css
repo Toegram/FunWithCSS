@@ -440,6 +440,12 @@ body {
     opacity: 0;
     transition: all .5s ease-out;
     backface-visibility: hidden; }
+  .story__button {
+    transform: scale(0.9); }
+    .story__button--left {
+      padding-left: 30rem; }
+    .story__button--right {
+      padding-right: 30rem; }
   .story:hover .story__caption {
     opacity: 1;
     text-shadow: 0 0 1px black;
