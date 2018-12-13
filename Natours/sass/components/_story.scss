@@ -3,8 +3,7 @@
   margin: 0 auto;
   margin-bottom: 4rem;
   box-shadow: 1rem 3rem 6rem rgba(15, 15, 15, .15);
-  background-color: $color-white;
-  // background-color: darkblue;
+  background-color: rgba($color-white, .6);
   padding: 3rem;
   padding-left: 6rem;
   font-size: $default-font-size;
@@ -24,7 +23,6 @@
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) translateY(2rem) skewX(12deg);
     position: relative;
-
   }
 
   &__image {
@@ -32,7 +30,6 @@
     transform: translateX(-3rem) scale(1.4);
     backface-visibility: hidden;
     transition: all .5s ease-out;
-
   }
 
   &__text{
