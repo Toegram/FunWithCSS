@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius: 3rem;
+    border-radius: $border-curve-big;
     overflow: hidden;
     box-shadow: 1rem 1.5rem 4rem rgba(15, 15, 15, .35);
 

@@ -11,7 +11,7 @@
   border-style: outset;
   border-width: 1px;
   border-color: rgba(15, 15, 15, .15);
-  border-radius: 3rem;
+  border-radius: $border-curve-big;
 
   &__shape{
     width: 10rem;
