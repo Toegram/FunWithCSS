@@ -23,7 +23,7 @@
     backface-visibility: hidden;
     border-radius: $border-curve-big;
     overflow: hidden;
-    box-shadow: 1rem 1.5rem 4rem rgba(15, 15, 15, .35);
+    box-shadow: -1rem 1.5rem 4rem rgba(15, 15, 15, .35);
 
     &--front{
       background-color: white;

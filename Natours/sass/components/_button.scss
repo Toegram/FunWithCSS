@@ -17,7 +17,7 @@
   &:hover{
     transform: translateY(-.3rem);
     /* x, y, blur, color */
-    box-shadow: .3rem .5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: -.3rem .5rem 1rem rgba(0, 0, 0, 0.2);
 
     &::after{
       transform: scaleX(1.07) scaleY(1.06);
@@ -85,7 +85,7 @@
   &:hover{
     background-image: linear-gradient(to right, $color-primary-light, $color-primary);
     color: $color-white;
-    box-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .3); //x, y, blur, color
+    box-shadow: -.5rem 1rem 2rem rgba(0, 0, 0, .3); //x, y, blur, color
     transform: translateY(.2rem) translateX(.1rem) scale(1.01);
     font-weight: 700;
   }
