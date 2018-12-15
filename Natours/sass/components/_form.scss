@@ -7,19 +7,20 @@
   &__input {
     font-family: inherit;
     color: inherit;
-    font-size: $default-font-size;
+    font-size: 1.3rem;
     padding: 1rem 1.5rem;
     border-radius: 10px;
-    box-shadow: rgba(14, 14, 14, .14);
+    // box-shadow: rgba(14, 14, 14, .14);
     border-bottom: 3px solid transparent;
-    width: 70%;
+    width: 90%;
     display: block;
+    transition: all .3s;
 
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(14, 14, 14, .14);
       border-bottom: 3px solid $color-primary;
-      transform: scale(1.075);
+      transform: scale(1.08);
     }
 
     &:focus:invalid {
@@ -33,12 +34,14 @@
 
 
   &__label {
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 500;
     margin-left: -35rem;
     margin-top: .5rem;
     display: block;
     transition: all .3s;
+    position: relative;
+
   }
 
 // + is immediate sibling selector. ~ is general sibling selector
@@ -46,6 +49,64 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-3.6rem);
+  }
+
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
+  }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    font-size: $default-font-size;
+    cursor: grab;
+    position: relative;
+    top: -2rem;
+    left: -1rem;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+  }
+
+  &__radio-button {
+    height: 3rem;
+    width: 3rem;
+    border: .5rem solid $color-primary;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: -.55rem;
+    left: -3.5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary-light;
+      opacity: 0;
+      transition: opacity .3s ease-out;
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
+
+  &__button {
+    position: relative;
+    top:0;
+    left: -3rem;
   }
 
 }

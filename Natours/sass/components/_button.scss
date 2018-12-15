@@ -1,5 +1,6 @@
 
  .btn{
+  &,
   &:link,
   &:visited {
     display: inline-block;
@@ -12,6 +13,10 @@
     position: relative;
     font-size: $default-font-size;
     font-weight: 700;
+
+    //change for <button> ELEMENT
+    border: none;
+    cursor: grab;
   }
 
   &:hover{
