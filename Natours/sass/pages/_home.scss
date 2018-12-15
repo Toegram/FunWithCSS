@@ -52,8 +52,11 @@
   background-size: cover;
   border-radius: $border-curve-big;
   box-shadow: -1.5rem 1.5rem 4rem rgba(14, 14, 14, .2);
-
   height: 50rem;
+
+  &__heading {
+    margin-top: -3rem;
+  }
 
   &__form {
     width: 50%;
