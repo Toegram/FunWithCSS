@@ -508,7 +508,7 @@ body {
   font-size: 1.6rem;
   cursor: grab;
   position: relative;
-  top: -2rem;
+  top: -1rem;
   left: -1rem; }
   .form__radio-label:active {
     cursor: grabbing; }
