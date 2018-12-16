@@ -30,8 +30,11 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(.1rem);
+    box-shadow: -1rem .5rem 1rem rgba(13, 13, 13, .13);
   }
 
   &--white {

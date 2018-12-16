@@ -255,8 +255,10 @@ body {
     transform: scaleX(1.07) scaleY(1.06);
     opacity: 0; }
 
-.btn:active {
-  transform: translateY(0.1rem); }
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(0.1rem);
+  box-shadow: -1rem 0.5rem 1rem rgba(13, 13, 13, 0.13); }
 
 .btn--white {
   background-color: #fff;
