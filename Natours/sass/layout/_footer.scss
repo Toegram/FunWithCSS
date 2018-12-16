@@ -1,0 +1,55 @@
+.footer {
+  background-color: $color-grey-very-dark;
+  padding: 3rem 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  &__logobox {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__logo{
+    width: 15rem;
+    height: auto;
+  }
+
+  &__navigation {
+    border-top: 1.5px solid $color-grey-very-light;
+    padding-top: 1rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      text-decoration: none;
+      color: $color-grey-very-light;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all .25s;
+    }
+
+    &:hover,
+    &:active {
+      font-weight: 700;
+      color: $color-primary;
+      transform: scale(1.2) skewY(5deg);
+      box-shadow: -1rem 1rem 2rem rgba(15, 15, 15, .5);
+    }
+
+  }
+
+}

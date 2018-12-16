@@ -14,7 +14,7 @@
     border-bottom: 3px solid transparent;
     width: 90%;
     display: block;
-    transition: all .3s;
+    transition: all .5s;
 
     &:focus {
       outline: none;
@@ -95,7 +95,7 @@
       transform: translate(-50%, -50%);
       background-color: $color-primary-light;
       opacity: 0;
-      transition: opacity .3s ease-out;
+      transition: opacity .5s ease-out;
     }
   }
 
