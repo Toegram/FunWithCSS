@@ -582,6 +582,14 @@ body {
     column-gap: 3rem;
     column-rule: 2px solid #f7f7f7;
     hyphens: auto; }
+  .popup__heading {
+    padding-left: 1.55rem; }
+  .popup__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 4rem; }
 
 .navigation__checkbox {
   display: none; }

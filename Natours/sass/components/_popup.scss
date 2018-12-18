@@ -42,7 +42,15 @@
     column-count: 2;
     column-gap: 3rem;
     column-rule: 2px solid $color-grey-light;
-
     hyphens: auto;
+  }
+
+  &__heading {
+    padding-left: 1.55rem;
+  }
+
+  &__btn {
+    @include absCenter;
+    top: 4rem;
   }
 }
