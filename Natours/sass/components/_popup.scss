@@ -6,6 +6,8 @@
   left: 0;
   background-color: rgba($color-black, .8);
   z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
 
   &__content {
     @include absCenter;
@@ -52,5 +54,10 @@
   &__btn {
     @include absCenter;
     top: 4rem;
+
+    &:hover {
+      transform: translateY(1rem);
+    }
   }
+
 }
