@@ -553,7 +553,8 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 3000;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: all .3s; }
   .popup__content {
     position: absolute;
     top: 50%;
@@ -564,7 +565,10 @@ body {
     box-shadow: -2rem 2rem 2rem rgba(15, 15, 15, 0.6);
     border-radius: 3rem;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.15);
+    transition: all .4s .3s; }
   .popup__left {
     width: 33.333333%;
     display: table-cell;
@@ -588,12 +592,27 @@ body {
     padding-left: 1.55rem; }
   .popup__btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 4rem; }
-    .popup__btn:hover {
-      transform: translateY(1rem); }
+    top: 1rem;
+    left: 1.2rem; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    font-size: 4.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 1s; }
+    .popup__close:link:hover, .popup__close:visited:hover {
+      color: #f97575;
+      transform: scale(1.2);
+      text-shadow: -0.2rem 0.3rem 0.2rem rgba(15, 15, 15, 0.25); }
 
 .navigation__checkbox {
   display: none; }
