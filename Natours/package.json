@@ -2,13 +2,19 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "landing page for natours",
+  "homepage": "https://toegram.github.io/FunWithCSS/",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "compile:sass": "node-sass sass/main.scss starter/css/style.css -w"
   },
   "author": "Tony Turetsky",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
